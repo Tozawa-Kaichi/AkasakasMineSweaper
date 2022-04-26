@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameTittle.unity
+    guid: a5afe1a69cb4a54458664cc072fa7e02
+  - enabled: 1
+    path: Assets/Scenes/AkasakaMineSweaper.unity
+    guid: 9ae3b5a8d3b67704289a2b20979be1cd
   m_configObjects: {}
