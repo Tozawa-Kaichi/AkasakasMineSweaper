@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CellCon : MonoBehaviour
 {
+    [SerializeField]int _cellZize = 0;
     // Start is called before the first frame update
     void Start()
     {
