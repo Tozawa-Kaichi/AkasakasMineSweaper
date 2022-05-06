@@ -16,4 +16,17 @@ public class CellCon : MonoBehaviour
     {
         
     }
+
+    void CellCheck()//セルが地雷かどうか調べる
+    {
+
+    }
+    void MineCount()//周囲の地雷数を表示
+    {
+
+    }
+    void SetMark()//印をつける
+    {
+
+    }
 }
