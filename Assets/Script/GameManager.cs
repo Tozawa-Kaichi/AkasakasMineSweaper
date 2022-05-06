@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject _cellPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,18 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void GameStart()//開始時処理
+    {
+
+    }
+    void GameOver()//地雷を踏んだ時
+    {
+
+    }
+    void GameClear()//クリア時
+    {
+
     }
 }

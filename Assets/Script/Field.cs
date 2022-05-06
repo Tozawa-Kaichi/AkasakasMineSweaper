@@ -15,4 +15,16 @@ public class Field : MonoBehaviour
     {
         
     }
+    void GenerateCells()//セルの生成
+    {
+
+    }
+    void SetMine()//地雷接地
+    {
+
+    }
+    void Kaiji()//周りのセルを開示
+    {
+
+    }
 }
