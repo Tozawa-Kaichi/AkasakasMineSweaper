@@ -29,4 +29,8 @@ public class GameManager : MonoBehaviour
     {
 
     }
+    void Timer()
+    {
+
+    }
 }
