@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+enum CellType { Empty, Mine, Count }
 public class CellCon : MonoBehaviour
 {
     [SerializeField]int _cellZize = 0;
-    enum CellType {Empty,Mine,Count }
+    CellType _celltype = CellType.Empty;
     // Start is called before the first frame update
     void Start()
     {
