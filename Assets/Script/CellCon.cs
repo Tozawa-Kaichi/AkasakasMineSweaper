@@ -21,9 +21,19 @@ public class CellCon : MonoBehaviour
 
     void CellCheck()//セルが地雷かどうか調べる
     {
-        //安全なセルの場合
+        switch(_celltype)
+        {
+            case CellType.Empty://安全なセルの場合
+                break;
+            case CellType.Mine://地雷セルの場合
+                break;
+            case CellType.Count:
+                MineCount();
+                break;
+        }
+        
 
-        //地雷セルの場合
+        
 
         //地雷の隣の場合
     }
