@@ -10,6 +10,7 @@ public class CellCon : MonoBehaviour
     CellType _celltype = CellType.Empty;
     GameManager _manager;
     int _index;
+    bool _markState = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +52,13 @@ public class CellCon : MonoBehaviour
     }
     void SetMark()//印をつける
     {
+        if(_markState==false)
+        {
 
+        }
+        else
+        {
+
+        }
     }
 }
