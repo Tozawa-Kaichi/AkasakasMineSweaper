@@ -26,7 +26,7 @@ public class CellCon : MonoBehaviour
         _manager = manager;
         _index = index;
     }
-    void CellCheck()//セルが地雷かどうか調べる
+    public void CellCheck()//セルが地雷かどうか調べる
     {
         switch(_celltype)
         {
