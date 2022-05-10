@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    void Timer()
+    void Timer()//タイムの計測及び表示
     {
 
     }
