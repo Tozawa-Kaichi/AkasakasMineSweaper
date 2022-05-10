@@ -7,8 +7,11 @@ public class CellCon : MonoBehaviour
 {
     [SerializeField]int _cellZize = 0;//セルのサイズ
     [SerializeField] GameObject _cover;
+    [SerializeField] GameObject _flag;
+    [SerializeField] GameManager _count;
     CellType _celltype = CellType.Empty;
     GameManager _manager;
+    
     int _index;
     bool _markState = false;
     // Start is called before the first frame update
@@ -20,7 +23,17 @@ public class CellCon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetButtonDown("Fire2"))
+        {
+            if(_markState==true)
+            {
+                _markState = false;
+            }
+            else
+            {
+                _markState = true;
+            }
+        }
     }
 
     public void Initialize(GameManager manager,int index)
@@ -54,11 +67,11 @@ public class CellCon : MonoBehaviour
     {
         if(_markState==false)
         {
-
+            _flag.SetActive(true);
         }
         else
         {
-
+            _flag.SetActive(false);
         }
     }
 }

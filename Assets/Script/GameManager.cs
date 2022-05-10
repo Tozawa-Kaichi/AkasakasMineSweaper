@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject _cellPrefab;
+    [SerializeField] GameObject _field;
     // Start is called before the first frame update
     void Start()
     {
