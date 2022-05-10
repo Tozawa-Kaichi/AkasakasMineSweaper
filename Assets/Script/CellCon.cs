@@ -5,7 +5,8 @@ using UnityEngine;
 enum CellType { Empty, Mine, Count }
 public class CellCon : MonoBehaviour
 {
-    [SerializeField]int _cellZize = 0;
+    [SerializeField]int _cellZize = 0;//セルのサイズ
+    [SerializeField] GameObject _cover;
     CellType _celltype = CellType.Empty;
     GameManager _manager;
     int _index;
@@ -28,6 +29,7 @@ public class CellCon : MonoBehaviour
     }
     public void CellCheck()//セルが地雷かどうか調べる
     {
+        _cover.SetActive(false);
         switch(_celltype)
         {
             case CellType.Empty://安全なセルの場合
@@ -42,11 +44,6 @@ public class CellCon : MonoBehaviour
                 MineCount();
                 break;
         }
-        
-
-        
-
-        
     }
     void MineCount()//周囲の地雷数を表示
     {
