@@ -23,8 +23,5 @@ public class Field : MonoBehaviour
     {
 
     }
-    void Kaiji(int Index)//周りのセルを開示
-    {
-
-    }
+    
 }

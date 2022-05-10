@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    void GameOver()//地雷を踏んだ時
+    public void GameOver()//地雷を踏んだ時
     {
 
     }
@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
 
     }
     void Timer()
+    {
+
+    }
+    public void Kaiji(int Index)//周りのセルを開示
     {
 
     }

@@ -7,6 +7,8 @@ public class CellCon : MonoBehaviour
 {
     [SerializeField]int _cellZize = 0;
     CellType _celltype = CellType.Empty;
+    GameManager _manager;
+    int _index;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +21,24 @@ public class CellCon : MonoBehaviour
         
     }
 
+    public void Initialize(GameManager manager,int index)
+    {
+        _manager = manager;
+        _index = index;
+    }
     void CellCheck()//セルが地雷かどうか調べる
     {
         switch(_celltype)
         {
             case CellType.Empty://安全なセルの場合
+                //ゲームマネージャーに隣接タイルを掘ってもらう
+                _manager.Kaiji(_index);
                 break;
             case CellType.Mine://地雷セルの場合
+                //ゲームマネージャーにゲームオーバー処理してもらう
+                _manager.GameOver();
                 break;
-            case CellType.Count:
+            case CellType.Count://地雷の隣の場合
                 MineCount();
                 break;
         }
@@ -35,7 +46,7 @@ public class CellCon : MonoBehaviour
 
         
 
-        //地雷の隣の場合
+        
     }
     void MineCount()//周囲の地雷数を表示
     {
