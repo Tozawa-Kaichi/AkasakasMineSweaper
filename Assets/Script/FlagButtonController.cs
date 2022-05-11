@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;//これがないとIPointerClickHandlerは動かないからusingに追加しよう
+using UnityEngine.EventSystems;//これらがないとIPointerClickHandlerは動かないからusingに追加しよう
 //自分で右クリックに反応するボタンを作成する
 public class FlagButtonController : MonoBehaviour, IPointerClickHandler//IPointerClickHandler（インターフェース）を継承する
 {
