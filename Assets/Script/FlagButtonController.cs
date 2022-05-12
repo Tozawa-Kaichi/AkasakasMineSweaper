@@ -16,7 +16,7 @@ public class FlagButtonController : MonoBehaviour, IPointerClickHandler//IPointe
                 //右クリックの処理
                 break;
             case PointerEventData.InputButton.Middle:
-                //（ホイールクリックの処理、は）無いです
+                //（ホイールクリックの処理、は今回必要）無いです。
                 break;
         }
     }
